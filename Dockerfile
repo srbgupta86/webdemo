@@ -7,7 +7,7 @@ ARG JETTY_VERSION2=jetty-distribution-9.4.26.v20200117
 ARG JETTY_TZ=https://repo1.maven.org/maven2/org/eclipse/jetty/$JETTY_VERSION/$JETTY_VERSION2.tar.gz
 ARG JETTY_HOME=/opt/jetty
 ARG TEMP=/tmp
-ARG WAR_SOURCE=./build/libs/webdemo.war
+ARG WAR_SOURCE=./build/libs/webdemo1.war
 RUN mkdir -p $JETTY_HOME
 ADD $JETTY_TZ $TEMP
 RUN tar -xf $TEMP/$JETTY_VERSION2.tar.gz -C $JETTY_HOME
