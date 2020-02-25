@@ -33,7 +33,7 @@ public class HelloServletTest {
 
         new HelloServlet().doGet(request, response);
 
-        assertEquals("Hello, World!", stringWriter.toString());
+        assertEquals("Hello, Techna!", stringWriter.toString());
     }
 
     @Test
